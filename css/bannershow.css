@@ -1,19 +1,23 @@
  /* box-sizing: border-box; */
  body {font-family: Verdana, sans-serif;}
- .mySlides {display: none;
- 
- }
- img {width: 100%;
-    height: min-content;  
-    text-align: center;
-    align-content: center;}
 
- 
+.mySlides {
+    background: palegoldenrod;
+    height: 260px;
+    width: fit-content;
+}
+
+.mySlides >  img {
+  height: 100%;
+}
+
  /* Slideshow container */
  .slideshow-container {
-   padding-top: 20px;
-   position: relative;
-   margin: auto;
+   height: 290px;
+   display: flex;
+   flex-direction: column;
+   justify-content:center;
+   align-items: center;
  }
  
  /* The dots/bullets/indicators */
@@ -37,9 +41,8 @@
    animation-duration: 1.5s;
  }
  .bigdot{
-   position: absolute;
-   top: 390px;
-   right: 90px;
+   margin-right: 40px;
+   float: right;
  }
 
  @keyframes fade {
